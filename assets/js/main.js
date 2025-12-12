@@ -8,8 +8,8 @@ $(document).ready(function () {
         qtag = sessionStorage.getItem('qtag');
     }
     if (qtag) {
-        const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}`;
-        //const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}&signup=false`;
+        //const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}`;
+        const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}&signup=false`;
         $('.modal__content-link').attr('href', newUrl);
         console.log(newUrl);
     }
@@ -90,7 +90,7 @@ $(document).ready(function () {
         fireBoxImage.addClass('active');
         setTimeout(() => {
             fireBoxImage.hide();
-        }, 1300);
+        }, 1400);
         const allBoxes = $('.welcome__box');
         allBoxes.not(clickedBox).addClass('hidden');
         $('.page__welcome').addClass('no-bg');
