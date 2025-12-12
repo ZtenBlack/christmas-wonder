@@ -95,6 +95,7 @@ $(document).ready(function () {
         allBoxes.not(clickedBox).addClass('hidden');
         $('.page__welcome').addClass('no-bg');
         $('.hide-after-anim').slideUp();
+        $('#snow').hide();
         playOpeningSound();
         let options = [10, 15, 20];
         let extra = options[Math.floor(Math.random() * options.length)];
@@ -194,3 +195,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
