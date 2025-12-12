@@ -8,8 +8,8 @@ $(document).ready(function () {
         qtag = sessionStorage.getItem('qtag');
     }
     if (qtag) {
-        //const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}`;
-        const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}&signup=false`;
+        const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}`;
+        //const newUrl = `https://10black.net/api/affiliate/?qtag=${qtag}&signup=false`;
         $('.modal__content-link').attr('href', newUrl);
         console.log(newUrl);
     }
@@ -192,4 +192,5 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
     });
+
 });
